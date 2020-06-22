@@ -168,62 +168,83 @@ $(document).ready(function() {
 });
 
 
-// The typewriter effect
-var TxtType = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
+// Typing effect and eraser
+const typedTextSpan = document.querySelector(".typed-text");
+const cursorSpan = document.querySelector(".cursor");
 
-TxtType.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
+const textArray = ["I'm a Freelancer", "I code for Experience and gaining skills ", "I code AT NO COST","I'm based in Winnipeg, Manitoba", ];
+const typingDelay = 200;
+const erasingDelay = 100;
+const newTextDelay = 2000; // Delay between current and next text
+let textArrayIndex = 0;
+let charIndex = 0;
 
-  if (this.isDeleting) {
-  this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-  this.txt = fullTxt.substring(0, this.txt.length + 1);
+function type() {
+  if (charIndex < textArray[textArrayIndex].length) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex);
+    charIndex++;
+    setTimeout(type, typingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+  	setTimeout(erase, newTextDelay);
   }
+}
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 200 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-  delta = this.period;
-  this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-  this.isDeleting = false;
-  this.loopNum++;
-  delta = 500;
+function erase() {
+	if (charIndex > 0) {
+    if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing");
+    typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1);
+    charIndex--;
+    setTimeout(erase, erasingDelay);
+  } 
+  else {
+    cursorSpan.classList.remove("typing");
+    textArrayIndex++;
+    if(textArrayIndex>=textArray.length) textArrayIndex=0;
+    setTimeout(type, typingDelay + 1100);
   }
+}
 
-  setTimeout(function() {
-  that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('typewrite');
-  for (var i=0; i<elements.length; i++) {
-      var toRotate = elements[i].getAttribute('data-type');
-      var period = elements[i].getAttribute('data-period');
-      if (toRotate) {
-        new TxtType(elements[i], JSON.parse(toRotate), period);
-      }
-  }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-  document.body.appendChild(css);
-};
+document.addEventListener("DOMContentLoaded", function() { // On DOM Load initiate the effect
+  if(textArray.length) setTimeout(type, newTextDelay + 250);
+});
 
 
+
+
+
+// var messages=["I'm an amateur Freelancer"," I'm work for EXPERIENCE!!"," I'm based in Winnipeg, Manitoba"];
+// var rank=0;
+
+// // Code for Chrome, Safari and Opera
+// document.getElementById("myTypewriter").addEventListener("webkitAnimationEnd", changeTxt);
+
+// // Standard syntax
+// document.getElementById("myTypewriter").addEventListener("animationend", changeTxt);
+
+// function changeTxt(e){
+//   _h1 = this.getElementsByTagName("p")[0];
+//   _h1.style.webkitAnimation = 'none'; // set element animation to none
+//    setTimeout(function() { // you surely want a delay before the next message appears
+//       _h1.innerHTML=messages[rank];
+//       var speed =3.5*messages[rank].length/20; // adjust the speed (3.5 is the original speed, 20 is the original string length
+//       _h1.style.webkitAnimation = 'typing '+speed+'s steps(40, end), blink-caret .70s step-end infinite'; //  switch to the original set of animation      
+//       (rank===messages.length-1)?rank=0:rank++; // if you have displayed the last message from the array, go back to the first one, else go to next message
+//     }, 1000);
+// }
+
+function toggleShow(elementId) {
+  let el = document.getElementById(elementId);
+  el.style.display = "block";
+  el.style.marginLeft = "auto";
+  el.style.marginRight = "auto";
+  
+
+}
+
+function toggleHide(elementId) {
+  let el = document.getElementById(elementId);
+  el.style.display = "none";
+}

@@ -8,6 +8,7 @@
         <title>Viki Makadia</title>
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <!-- Google fonts-->
         <!-- <link href="https://fonts.googleapis.com/css?family=Raleway+Sans:400,700" rel="stylesheet" /> -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
@@ -24,9 +25,13 @@
         <!-- Back to top button -->
         <a id="buttonTop"></a>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-           <img src="assets\img\portfolio\thumbnails\whatsapp_image_2020_04_05_at_8_23_51_pm__2__OwK_icon.ico" width="45" alt="" class="d-inline-block align-middle mr-2">
-            <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2" id="mainNav">
+            <div class="logo">
+                <a href="#"><img src="assets\img\portfolio\thumbnails\whatsapp_image_2020_04_05_at_8_23_51_pm__2__OwK_icon.ico" width="55" alt="" class="d-inline-block align-middle mr-0"></a>
+            </div>
+
+           
+            <div class="container-fluid">
                 <a class="navbar-brand js-scroll-trigger" href="#page-top"></a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
@@ -41,32 +46,39 @@
             </div>
         </nav>
 
-        <header>
+        <header >
             <div class="overlay"></div>
-            <!-- https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4 -->
             <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
               <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
             </video>
             <div class="container h-100">
-              <div class="d-flex h-100 text-center align-items-center">
-                <div class="w-100 text-white">
-                  <h1 class="display-3">Viki Makadia</h1>
-                  <div class="typewriter">
-                    <p class="lead mb-0">An ambitious Computer Scientist, in the making...</p>
-                  </div>
+              
+                <div class="d-flex h-100 text-center align-items-center">
+                    <div class="w-100 text-white ">
+                        <h1 class="display-3">I'm <strong>Viki Makadia</strong></h1>
+
+                            <!-- <div class="typewriter" id="myTypewriter">
+                                <p class="lead mb-0">An ambitious Computer Scientist, in the making...</p>
+                            </div> -->
+                            <div class="Typercontainer">
+                                <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+                            </div>
+                    </div>
+              
                 </div>
-              </div>
             </div>
         </header>
 
         <!-- About section--> 
-        <section class="page-section bg-primary" id="about">
-            <div class="container">
+        <section class="page-section bg-primary" id="about" onmouseenter="toggleShow('image1');" onmouseleave="toggleHide('image1');">
+            <div class="container-fluid" style="text-align: center;">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
+                    <div class=" col-lg-8 text-center" >
+                        
                         <h2 class="text-white mt-0">About me</h2>
+                            <img style="display:none;" id="image1" src="assets\img\portfolio\thumbnails\whatsapp_image_2020_04_05_at_8_23_51_pm__2__OwK_icon.ico" class="img-fluid" alt="Responsive image">
                         <hr class="divider light my-4" />
-                        <p class="font-weight-bold text-white-40 mb-1">Hello!! I'm Viki Makadia, a 3rd year student in University of Manitoba.I am majoring in Computer Science. I'm originally from Eldoret,Kenya.</p>
+                        <p class="font-weight-bold text-white-40 mb-1">Hello!! My name is Viki Makadia, a 3rd year student in University of Manitoba.I am majoring in Computer Science. I was born and raised in Eldoret, Kenya.</p>
                        
                     </div>
                 </div>
@@ -75,11 +87,11 @@
 
         <!-- Services section--> <!--Skills,LANGUAGES,then divide them --> 
         <section class="page-section" id="services">
-            <div class="container">
+            <div class="container-fluid" style="padding-bottom: 5%;">
                 <h2 class="text-center mt-0"> Technical Skills</h2>
                 <hr class="divider primary my-4" />
                 <h4 class="text-black-50 mb-4">LANGUAGES</h4>
-                <p class="text-black-60 mb-2">This section highlights variety of programming Languages i have worked with before, and this list is forever growing!!. Day by day, i am becoming better at them, after all learning is a process!!</p>
+                <p class="text-black-60 mb-2">This section highlights variety of programming Languages, various software and Intergrated Development Environments (IDEs) i have worked with before, and this list is forever growing!!. Day by day, i am becoming better at them, after all learning is a process!!</p>
                 
                 <div class="container">
                     <div class="row justify-content-md-left">
@@ -140,7 +152,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-12 mx-auto">
-                            <div class="p-5 shadow rounded" style="background: linear-gradient(#e66465, #9198e5);">
+                            <div class="p-5 shadow rounded " style="background: linear-gradient(#e66465, #9198e5);">
                                 <!-- Bootstrap carousel-->
                                 <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
                                     <!-- Bootstrap carousel indicators [nav] -->
@@ -230,11 +242,11 @@
        
         
        <!-- Portfolio section <section id="portfolio">-->
-       <section class="page-section" id="portfolio">
-            <div class="container mt-5">
+       <section class="page-section" id="portfolio" style="padding-bottom: 20px;padding-top: 0px;">
+            <div class="container">
 
                 <!-- Page Heading -->
-                <h2 class="text-center mt-0">Projects</h2>
+                <h2 class="text-center">Projects</h2>
                 <hr class="divider primary my-4" />
                 <div class="container p-t-0 m-t-2 carousel-inner">  
                     <div class="row">
@@ -309,10 +321,9 @@
                                 <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                                 <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="https://github.com/Viki4325/Brain-Trainer">Brain Trainer</a>
+                                    <a href="https://github.com/Viki4325/Brain-Trainer">Coming Soon!!</a>
                                 </h4>
-                                <p class="card-text">A game with random mathematical questions, where the user has four options to choose from. The
-                                    user is limited to 30 seconds to answers as many questions as they can.</p>
+                                <p class="card-text">I code cool websites AT NO COST, i'm willing to do it for you. Want to work on an idea together? <a href="#contact">Contact Me</a></p>
                                 </div>
                             </div>
                         </div>
@@ -331,10 +342,9 @@
                                 <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                                 <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="https://github.com/Viki4325/Brain-Trainer">Brain Trainer</a>
+                                    <a href="https://github.com/Viki4325/Brain-Trainer">Coming Soon!!</a>
                                 </h4>
-                                <p class="card-text">A game with random mathematical questions, where the user has four options to choose from. The
-                                    user is limited to 30 seconds to answers as many questions as they can.</p>
+                                <p class="card-text">More Projects being worked on...Will be added to the list soon. Have an idea and need someone to work with? <a href="#contact">Contact me</a></p>
                                 </div>
                             </div>
                         </div>
@@ -346,10 +356,9 @@
                                 <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                                 <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="https://github.com/Viki4325/Brain-Trainer">Brain Trainer</a>
+                                    <a href="https://github.com/Viki4325/Brain-Trainer">Coming Soon!!</a>
                                 </h4>
-                                <p class="card-text">A game with random mathematical questions, where the user has four options to choose from. The
-                                    user is limited to 30 seconds to answers as many questions as they can.</p>
+                                <p class="card-text">More Projects being worked on...Will be added to the list soon. Have an idea and need someone to work with? <a href="#contact">Contact me</a></p>
                                 </div>
                             </div>
                         </div>
@@ -361,10 +370,9 @@
                                 <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                                 <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="https://github.com/Viki4325/Brain-Trainer">Brain Trainer</a>
+                                    <a href="https://github.com/Viki4325/Brain-Trainer">Coming Soon!!</a>
                                 </h4>
-                                <p class="card-text">A game with random mathematical questions, where the user has four options to choose from. The
-                                    user is limited to 30 seconds to answers as many questions as they can.</p>
+                                <p class="card-text">Work in progress...Will be added to the list soon.<a href="#contact">Contact Me</a></p>
                                 </div>
                             </div>
                         </div>
@@ -388,36 +396,56 @@
                     <div class="col-lg-8 text-center">
                         <h2 class="mt-0">Let's Get In Touch!</h2>
                         <hr class="divider my-4" />
-                        <p class="text-muted mb-5">Want to say hello or want to work together on projects as a team, call me or email me!! </p>
+                        
                     </div>
                 </div>
 
                 <div class="row">
-                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                        <div>(431) 335-9869</div>
-                    </div>
-                    <div class="col-lg-4 mr-auto text-center">
-                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i
-                        ><address><a class="d-block" href="mailto:makadiaviki@gmail.com">makadiaviki@gmail.com</a></address>
-                    </div>
-                </div>
+                    <div class="column " style="align-content: center;" >
 
-                <div class="row justify-content-md-center">
-                    <ul class="row " style="list-style-type: none">
-                        <li class="col-6 col-sm-2"> <a href="https://www.facebook.com/viki.makadia"><i id="social-fb" class="fab fa-facebook-square fa-3x "></i></a></li>
-                        <!-- <li class="col-6 col-sm-2"> <a href=""><i id="social-tw" class="fab fa-twitter-square fa-3x"></i></a></li> -->
-                        <li class="col-6 col-sm-2"> <a href="https://www.linkedin.com/in/viki-makadia-649656171/"><i id="social-gp" class="fab fa-linkedin-in fa-3x"></i></a></li>
-                        <li class="col-6 col-sm-2"> <a href="https://www.instagram.com/viki_makadia/"><i id="social-em" class="fab fa-instagram fa-3x"></i></a></li>
-                        <li class="col-6 col-sm-2"> <a href="https://github.com/Viki4325"><i id="social-gh" class="fab fa-github fa-3x"></i></a></li>
-                    </ul>
-                </div>
+                        <div class="row justify-content-md-center mt-5">
+                            <p class="text-muted mb-5 mt-5" style="text-align: center;">Want to say hello or work together on projects as a team, call me or email me!! </p>
+                            <ul style="list-style-type: none;">
+                            <li>
+                                <i class="fas fa-phone fa-3x text-muted"> </i><span style="display: inline-block;vertical-align: middle;">&nbsp;&nbsp; (431) 335-9869 </span>
+                            </li>
+                            <li>
+                                 <i class="fas fa-envelope fa-3x mt-5 text-muted"> </i> <span style="display: inline-block;vertical-align: middle;"><address><a class="d-block" href="mailto:makadiaviki@gmail.com">&nbsp;&nbsp; makadiaviki@gmail.com</a></address></span>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt fa-3x mt-5 text-muted"></i><span style="display: inline-block;vertical-align: middle;">&nbsp;&nbsp; Winnipeg, Manitoba </span>
+                            </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Social Media icons -->
+                        <div class="row justify-content-md-center mt-5" style="margin-top: 5px;">
+                            <ul class="social-icons mt-5" style="list-style-type: none;">
+                                <li class="col-6 col-sm-2" style="margin: 5px;"> <a href="https://www.facebook.com/viki.makadia"><i id="social-fb" class="fab fa-facebook-square fa-3x "></i></a></li>
+                                <!-- <li class="col-6 col-sm-2"> <a href=""><i id="social-tw" class="fab fa-twitter-square fa-3x"></i></a></li> -->
+                                <li class="col-6 col-sm-2" style="margin: 5px;"> <a href="https://www.linkedin.com/in/viki-makadia-649656171/"><i id="social-gp" class="fab fa-linkedin-in fa-3x"></i></a></li>
+                                <li class="col-6 col-sm-2" style="margin: 5px;"> <a href="https://www.instagram.com/viki_makadia/"><i id="social-em" class="fab fa-instagram fa-3x"></i></a></li>
+                                <li class="col-6 col-sm-2" style="margin: 5px;"> <a href="https://github.com/Viki4325"><i id="social-gh" class="fab fa-github fa-3x"></i></a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="column">
+                        <div class="row">
+                            <div class="col-lg-12 mr-auto text-center">
+                                <div class="powr-form-builder" id="0ee22e3e_1592810775"></div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+
+                <div class="powr-hit-counter" id="bcf12c6e_1592817089"></div>
             </div>
         </section>
         <!-- Footer--> 
-        <!-- <footer class="bg-light py-5">
-            <div class="container"><div class="small text-center text-muted">Copyright © 2020 - Creative Bootstrap Theme</div></div>  
-        </footer> -->
+        <footer class="bg-light py-5">
+            <div class="container"><div class="small text-center text-muted">Design Inspired By Creative Bootstrap Theme ©</div></div>  
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
@@ -429,6 +457,10 @@
         <!-- Slider -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-       
+        <!-- Feedback form -->
+        <script src="https://www.powr.io/powr.js?platform=embed"></script>
+
+
+        <script src="https://www.powr.io/powr.js?platform=embed"></script>
     </body>
 </html>

@@ -397,6 +397,7 @@ h6, .h6 {
   font-weight: 300;
 }
 
+
 .display-1 {
   font-size: 6rem;
   font-weight: 300;
@@ -421,28 +422,10 @@ h6, .h6 {
   line-height: 1.2;
 }
 
-.typewriter
+.display-5
 {
-  overflow: hidden;
-  /* border-right: .15em solid orange; */
-  white-space: nowrap;
-  margin: 0 auto;
-  letter-spacing: .10em;
-  animation:
-    typing 5.0s steps(80,end),
-    blink-caret .50s step-end infinite; 
-}
-/*The typing effect*/
-@keyframes typing
-{
-  from{width: 0}
-  to{width: 100%}
-}
-/*The type writer effect*/
-@keyframes blink-caret
-{
-  from, to{border-color: transparent}
-  50% {border-color: white;}
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 
@@ -628,6 +611,20 @@ pre code {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .no-gutters {
@@ -3925,6 +3922,7 @@ input[type=button].btn-block {
 .nav-link:hover, .nav-link:focus {
   text-decoration: none;
 }
+
 .nav-link.disabled {
   color: #6c757d;
   pointer-events: none;
@@ -4013,6 +4011,7 @@ input[type=button].btn-block {
   justify-content: space-between;
   padding: 0.5rem 1rem;
 }
+
 .navbar .container,
 .navbar .container-fluid,
 .navbar .container-sm,
@@ -10023,7 +10022,7 @@ hr.light {
 }
 
 .page-section {
-  padding: 8rem 0;
+  padding: 6rem 0;
 }
 
 #mainNav {
@@ -10188,6 +10187,12 @@ header .container {
   position: relative;
   z-index: 2;
 }
+ 
+header .container strong
+{
+  color: var(--primary);
+  
+}
 
 header .overlay {
   position: absolute;
@@ -10213,6 +10218,15 @@ header .overlay {
     Multicoloured Hover Variations
 */
  
+ul.social-icons{
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul.social-icons li{
+  display: inline;
+}
+
  #social-fb:hover {
     color: #3B5998;
     zoom: 1.10;    
@@ -10330,51 +10344,22 @@ header .overlay {
   color: #96a2a7;
 }
 
-/* MODAL FEEDBACK */
-.modal-dialog {
-  height: 50%;
-  width: 50%;
-  margin: auto
-}
-
-.modal-header {
-  color: white;
-  background-color: #007bff
-}
-
-textarea {
-  border: none;
-  box-shadow: none !important;
-  -webkit-appearance: none;
-  outline: 0px !important
-}
-
-.openmodal {
-  margin-left: 35%;
-  width: 25%;
-  margin-top: 25%
-}
-
-.icon1 {
-  color: #007bff
-}
-
-a {
-  margin: auto
-}
-
-input {
-  color: #007bff
-}
 
 /* Aside content */
 aside {
   width: 600px;
-  /* padding-left: 15px;
-  margin-left: 15px; */
-  float: right;
-  font-style: italic;
-  background-color: transparent;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: .5rem; 
+}
+/* Temporary solution */
+@media all and (max-width: 600px)
+{
+  aside
+  {
+    width: auto;
+    float: auto;
+  }
 }
 
 /* Slider qoutes in the Aside content */
@@ -10387,3 +10372,83 @@ aside {
     background: #28a745;
 }
 
+/* Typing effect an erase */
+.Typercontainer
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Typercontainer p {
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+.Typercontainer p span.typed-text {
+  font-weight: normal;
+  color: white;
+}
+.Typercontainer p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  animation: blink 1s infinite;
+}
+.Typercontainer p span.cursor.typing {
+  animation: none;
+}
+@keyframes blink {
+  0%  { background-color: #ccc; }
+  49% { background-color: #ccc; }
+  50% { background-color: transparent; }
+  99% { background-color: transparent; }
+  100%  { background-color: #ccc; }
+}
+
+/* .typewriter 
+{
+  overflow: hidden;
+  white-space: nowrap;
+  margin:0 auto;
+  letter-spacing: .10em;
+  animation:
+    typing 7.0s steps(70,end),
+    blink-caret .50s step-end infinite; 
+    
+} */
+/* For media screen, whose width is greater than the one specified use the code below */
+/* Temp solution */
+/* @media all and (max-width: 510px)
+{
+  .typewriter 
+  {
+    overflow: auto;
+    flex-wrap: wrap;
+    white-space:normal;
+    margin:0 auto;
+    letter-spacing: .10em;
+    animation:
+      typing 7.0s steps(70,end),
+      blink-caret .50s step-end infinite; 
+
+  }
+} */
+
+/*The typing effect*/
+/* @keyframes typing
+{
+  from{width: 0; overflow:normal;}
+  to{width: 100%}
+} */
+
+/*The type writer effect*/
+/* @keyframes blink-caret
+{
+  from, to{border-color: transparent}
+  50% {border-color: white;}
+} */
