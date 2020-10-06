@@ -10409,7 +10409,37 @@ aside {
   99% { background-color: transparent; }
   100%  { background-color: #ccc; }
 }
+.buttonLang
+{
+  padding: 15px;
+  background-color: white;
+  opacity: 0.75;
+  border: solid;
+  color: white;
+  border-width: 0.5px;
+  text-decoration: none;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  margin: 25px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+}
 
+#lang
+{
+  color: black;
+  font-size: 15px;
+}
+
+.buttonLang :after, :before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 /* .typewriter 
 {
   overflow: hidden;
