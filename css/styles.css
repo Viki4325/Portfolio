@@ -4404,6 +4404,7 @@ input[type=button].btn-block {
   min-height: 1px;
   padding: 1.25rem;
   background: linear-gradient(-45deg,#ADA996,#F2F2F2,#DBDBDB,#EAEAEA);
+  border-radius: 15px;
 }
 
 .card-title {
