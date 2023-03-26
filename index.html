@@ -13,22 +13,26 @@
         <!-- <link href="https://fonts.googleapis.com/css?family=Raleway+Sans:400,700" rel="stylesheet" /> -->
         <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" /> -->
         <!-- Third party plugin CSS-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
      
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+
+        
     </head>
     
     <body id="page-top">
         <!-- Back to top button -->
         <a id="buttonTop"></a>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-2" id="mainNav">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top py-2" id="mainNav">
             <div class="logo">
                 <a href="#"><img src="assets\img\portfolio\thumbnails\whatsapp_image_2020_04_05_at_8_23_51_pm__2__OwK_icon.ico" width="55" alt="" class="d-inline-block align-middle mr-0"></a>
+
             </div>
+            <a href="#" style="float: right; white-space: nowrap;" > <h4> 𝕍𝕚𝕜𝕚 𝕄𝕒𝕜𝕒𝕕𝕚𝕒</h4> </a>
 
            
             <div class="container-fluid">
@@ -37,6 +41,7 @@
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#services">Skills</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#background">Background</a></li>
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a></li><!--Resume here//Courses to complete-->
                         <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#">Courses</a></li>  -->
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
@@ -60,9 +65,9 @@
                             <!-- <div class="typewriter" id="myTypewriter">
                                 <p class="lead mb-0">An ambitious Computer Scientist, in the making...</p>
                             </div> -->
-                            <div class="Typercontainer">
+<!--                             <div class="Typercontainer">
                                 <p><span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
-                            </div>
+                            </div> -->
                     </div>
               
                 </div>
@@ -71,15 +76,18 @@
 
         <!-- About section--> 
         <section class="page-section bg-primary" id="about" onmouseenter="toggleShow('image1');" onmouseleave="toggleHide('image1');">
-            <div class="container-fluid" style="text-align: center;">
-                <div class="row justify-content-center">
+            <div class="container-fluid reveal" style="text-align: center;">
+                <div class="row justify-content-center reveal">
                     <div class=" col-lg-8 text-center" >
                         
                         <h2 class="text-white mt-0">About me</h2>
                             <img style="display:none;" id="image1" src="assets\img\portfolio\thumbnails\whatsapp_image_2020_04_05_at_8_23_51_pm__2__OwK_icon.ico" class="img-fluid" alt="Responsive image">
                         <hr class="divider light my-4" />
-                        <p class="font-weight-bold text-white-40 mb-1">Hello!! My name is Viki Makadia, a 3rd year student in University of Manitoba.I am majoring in Computer Science. I was born and raised in Eldoret, Kenya.</p>
-                        <p class="font-weight-bold text-white-40 mb-1">I believe that skills can be taught but personality is inherent. I prefer to keep learning,continue challenging myself, and doing interesting things that matter. I am never satesfied with just coming up with ideas, instead i have an impulsive need to act on them. I also believe that knowledge is best gained by sharing and always learning, hence a great fan of teamwork.</p>
+                        <p class="font-weight-bold text-white-40 mb-1">Hi there, and welcome to my personal website! My name is Viki Makadia, and I'm a Computer Science Honors graduate from the University of Manitoba. I was born and raised in Eldoret, Kenya, and I'm passionate about using technology to solve real-world problems.</p>
+                        <p class="font-weight-bold text-white-40 mb-1">During my studies, I specialized in several topics, including Software Engineering, Human-Computer Interaction, Databases, and Artificial Intelligence. I also gained valuable work experience in various fields, both related and unrelated to computer science. These experiences have broadened my perspective and helped me develop my skills as a computer scientist and as a person.</p>
+                        <p class="font-weight-bold text-white-40 mb-1">I'm currently looking for new job opportunities that allow me to apply my skills and make a meaningful contribution to the organization. While I may not know all the latest technologies, frameworks, or programming languages, I'm always eager to learn and grow. My biggest strength is my willingness and ability to learn new things quickly and apply them in practice.</p>
+                        <p class="font-weight-bold text-white-40 mb-1">I believe that skills can be taught but personality is inherent. I prefer to keep learning,continue challenging myself, and doing interesting things that matter. I am never satisfied with just coming up with ideas, instead i have an impulsive need to act on them. I also believe that knowledge is best gained by sharing and always learning, hence a great fan of teamwork.</p>
+                        <p class="font-weight-bold text-white-40 mb-1">If you're interested in connecting or collaborating, feel free to contact me! Thank you for visiting my website, and I look forward to hearing from you soon.</p>
                     </div>
                 </div>
             </div>
@@ -87,238 +95,510 @@
 
         <!-- Services section--> <!--Skills,LANGUAGES,then divide them --> 
         <section class="page-section" id="services">
-            <div class="container-fluid" style="padding-bottom: 5%;">
+            <div class="container-fluid reveal" style="padding-bottom: 4%;">
                 <h2 class="text-center mt-0"> Technical Skills</h2>
                 <hr class="divider primary my-4" />
                 
-                <p class="text-black-60 mb-2" style="text-align:center;">This section highlights variety of programming Languages, various software and Intergrated Development Environments (IDEs) i have worked with before, and this list is forever growing!!. Day by day, i am becoming better at them, after all learning is a process!!</p>
+                <p class="font-weight-bold text-black-60 mb-2 reveal" style="text-align:center;">This section highlights variety of programming Languages, various software and Intergrated Development Environments (IDEs) I have worked with before, and this list is forever growing!!. Day by day, I am becoming better at them, after all learning is a process!!</p>
                 
-                <div class="container" style="  background: linear-gradient(-45deg,#ADA996,#F2F2F2,#DBDBDB,#EAEAEA); border-radius: 15px;">
-                    <h4 class="text-center" style="color: slategray;">LANGUAGES</h4>
+                <div class="container reveal" style="  background: linear-gradient(-45deg,#ADA996,#F2F2F2,#DBDBDB,#EAEAEA); border-radius: 15px;">
+                    <h4 class="text-center" style="color: slategray;">LANGUAGES / FRAMEWORKS</h4>
                     <div class="row justify-content-md-left">
-                      <div class="col col-lg-2 font-weight-bold">
+                      <div class="col col-lg-2 font-weight-bold reveal">
                         <ul>
 
-                            <div class="buttonLang">
+                            <div class="buttonLang hvr-radial-in">
                                 <p id="lang">Java</p>
                             </div>
-                            <div class="buttonLang">
+                            <div class="buttonLang hvr-radial-in">
                                 <p id="lang">C++</p>
                             </div>
-                            <div class="buttonLang">
+                            <div class="buttonLang hvr-radial-in">
                                 <p id="lang">C</p>
                             </div>
-                            <div class="buttonLang">
-                                <p id="lang">Git</p>
+                            <div class="buttonLang hvr-radial-in">
+                                <p id="lang">Javascript</p>
                             </div>
+                      
 
                         </ul>
                       </div>
-                      <div class="col col-lg-2 font-weight-bold">
+                      <div class="col col-lg-2 font-weight-bold reveal">
                         <ul>
 
-                            <div class="buttonLang">
-                                <p id="lang">Android</p>
+                            <div class="buttonLang hvr-radial-in">
+                                <p id="lang">Android </p>
                             </div>
-                            <div class="buttonLang">
-                                <p id="lang">XML</p>
+                            <div class="buttonLang hvr-radial-in">
+                                <p id="lang">Kotlin </p>
                             </div>
-                            <div class="buttonLang">
+                            <div class="buttonLang hvr-radial-in">
+                                <p id="lang">HTML/CSS/Bootstrap</p>
+                            </div>
+                            <div class="buttonLang hvr-radial-in">
+                                <p id="lang">React / React Native</p>
+                            </div>
+                        </ul>
+                      </div>
+                      <div class="col col-lg-2 font-weight-bold reveal">
+                        <ul>
+
+                             <div class="buttonLang hvr-radial-in">
                                 <p id="lang">Python</p>
                             </div>
-                            <div class="buttonLang">
-                                <p id="lang">Kotlin</p>
+                            <div class="buttonLang hvr-radial-in">
+                                <p id="lang">R</p>
                             </div>
-                        </ul>
-                      </div>
-                      <div class="col col-lg-2 font-weight-bold">
-                        <ul>
-
-                             <div class="buttonLang">
-                                <p id="lang">JavaScript</p>
+                            <div class="buttonLang hvr-radial-in">
+                                <p id="lang">SAS</p>
                             </div>
-                            <div class="buttonLang">
-                                <p id="lang">HTML/CSS</p>
+                            <div class="buttonLang hvr-radial-in">
+                                <p id="lang">SQL/MySQL</p>
                             </div>
-                            <div class="buttonLang">
-                                <p id="lang">Bootstrap</p>
-                            </div>
-                             <div class="buttonLang">
-                                <p id="lang">Processing</p>
-                            </div>
+                           
                             
                         </ul>
                       </div>
-                      <div class="col col-lg-2 font-weight-bold ">
+                      <div class="col col-lg-2 font-weight-bold reveal">
                         <ul>
-                            <div class="buttonLang">
+                            <div class="buttonLang hvr-radial-in">
                                 <p id="lang">JUnit(Tests)</p>
                             </div>
-                            <div class="buttonLang">
-                                <p id="lang">C#</p>
+                            <div class="buttonLang hvr-radial-in">
+                                <p id="lang">MERN Stack</p>
                             </div>
-                            <div class="buttonLang">
-                                <p id="lang">SQL</p>
+                            <div class="buttonLang hvr-radial-in">
+                                <p id="lang">Node.js</p>
                             </div>
-                           
+                             <div class="buttonLang hvr-radial-in">
+                                <p id="lang">Cloud Computing (Learning)</p>
+                            </div>
+                        
                         </ul>
                       </div>
                     </div>
                 </div>
                 
 
-                <div class="container" style="background: linear-gradient(-45deg,#EAEAEA,#DBDBDB,#F2F2F2,#ADA996); margin-top: 5%; border-radius: 15px;">
+<!--                 <div class="container reveal" style="background: linear-gradient(-45deg,#EAEAEA,#DBDBDB,#F2F2F2,#ADA996); margin-top: 5%; border-radius: 15px;">
                     <h4 class="text-center" style="color: slategray;">SOFTWARE AND ENVIRONMENTS</h4>
                     <div class="row justify-content-md-left">
                         <div class="col col-lg-2 font-weight-bold "> </div>
-                        <div class="col col-lg-2 font-weight-bold ">
-                            <!-- <ul>
-                                <li>JetBrains IDE</li>
-                                <li>Visual Studio</li>
-                                <li>Unity</li>
-                            </ul> -->
-                            <div class="buttonLang">
-                                <p id="lang">JetBrains IDE</p>
-                            </div>
-                            <div class="buttonLang">
-                                <p id="lang">Visual Studio</p>
-                            </div>
-                            <div class="buttonLang">
-                                <p id="lang">Unity</p>
-                            </div>
+                        <div class="col col-lg-2 font-weight-bold reveal">
+                            <ul>
+                                <div class="buttonLang hvr-radial-in">
+                                    <p id="lang">JetBrains IDE</p>
+                                </div>
+                                <div class="buttonLang hvr-radial-in">
+                                    <p id="lang">Visual Studio</p>
+                                </div>
+                                <div class="buttonLang hvr-radial-in">
+                                    <p id="lang">Unity</p>
+                                </div>
+                            </ul>
                         </div>
 <!--                         <div class="col col-lg-2 font-weight-bold "> </div> -->
-                        <div class="col col-lg-2 font-weight-bold ">
-                            
-                            <div class="buttonLang">
-                                <p id="lang">Android Studio</p>
-                            </div>
-                            <div class="buttonLang">
-                                <p id="lang">MySQL</p>
-                            </div>
-                            <div class="buttonLang">
-                                <p id="lang">Processing</p>
-                            </div>
+<!--                         <div class="col col-lg-2 font-weight-bold reveal">
+                            <ul>
+                                <div class="buttonLang hvr-radial-in">
+                                    <p id="lang">Android Studio</p>
+                                </div>
+                                <div class="buttonLang hvr-radial-in">
+                                    <p id="lang">MySQL</p>
+                                </div>
+                                <div class="buttonLang hvr-radial-in">
+                                    <p id="lang">Processing</p>
+                                </div>
+                            </ul>
                         </div>
-                        <div class="col col-lg-2 font-weight-bold ">
-                            <div class="buttonLang">
-                                <p id="lang">Firebase</p>
-                            </div>
+                        <div class="col col-lg-2 font-weight-bold reveal">
+                            <ul>
+                                <div class="buttonLang hvr-radial-in">
+                                    <p id="lang">Firebase</p>
+                                </div>
+                                
+                                <div class="buttonLang hvr-radial-in">
+                                    <p id="lang">Version Control</p>
+                                </div>
 
-                           <div class="buttonLang">
-                                <p id="lang">Microsoft Office</p>
-                            </div>
+                            <div class="buttonLang hvr-radial-in">
+                                    <p id="lang">Microsoft Office</p>
+                                </div>
+                            </ul>
                         </div>
     
                     </div>
-                </div>
-                
-            </div>
-           
-            <aside >
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-12 mx-auto">
-                            <div class="p-5 shadow rounded " style="background: linear-gradient(#e66465, #9198e5);">
-                                <!-- Bootstrap carousel-->
-                                <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
-                                    <!-- Bootstrap carousel indicators [nav] -->
-                                    <ol class="carousel-indicators mb-0">
-                                        <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                                    </ol>
-            
-            
-                                    <!-- Bootstrap inner [slides]-->
-                                    <div class="carousel-inner px-3 pb-2">
-                                        <!-- Carousel slide-->
-                                        <div class="carousel-item active">
-                                            <div class="media"><img class="rounded-circle img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-1_ffutqr.jpg" alt="" width="75">
-                                                <div class="media-body ml-3">
-                                                    <blockquote class="blockquote border-0 p-0">
-                                                        <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>The learning process continues until the day you die.</p>
-                                                        <footer class="blockquote-footer">Kirk Douglas, 
-                                                            <cite title="Source Title">Everydaypower.com</cite>
-                                                        </footer>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-            
-                                        <!-- Carousel slide-->
-                                        <div class="carousel-item">
-                                            <div class="media"><img class="rounded-circle img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-3_hdxocq.jpg" alt="" width="75">
-                                                <div class="media-body ml-3">
-                                                    <blockquote class="blockquote border-0 p-0">
-                                                        <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>Tell me and I forget. Teach me and I remember. Involve me and I learn.</p>
-                                                        <footer class="blockquote-footer">Benjamin Franklin,
-                                                            <cite title="Source Title">brainyquote.com</cite>
-                                                        </footer>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-            
-                                        <!-- Carousel slide-->
-                                        <div class="carousel-item">
-                                            <div class="media"><img class="rounded-circle img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-2_gibm2s.jpg" alt="" width="75">
-                                                <div class="media-body ml-3">
-                                                    <blockquote class="blockquote border-0 p-0">
-                                                        <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i>If somebody offers you an amazing opportunity but you are not sure you can do it, say yes – then learn how to do it!”</p>
-                                                        <footer class="blockquote-footer">Richard Branson,     
-                                                            <cite title="Source Title">goodreads.com</cite>
-                                                        </footer>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
+                </div>  
+            </div> -->
 
-                                        <div class="carousel-item">
-                                            <div class="media"><img class="rounded-circle img-thumbnail" src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-2_gibm2s.jpg" alt="" width="75">
-                                                <div class="media-body ml-3">
-                                                    <blockquote class="blockquote border-0 p-0">
-                                                        <p class="font-italic lead"> <i class="fa fa-quote-left mr-3 text-success"></i> <b>Fail</b> early, <b>Fail</b> often, <b>Fail</b> forward</p>
-                                                        <footer class="blockquote-footer">John C. Maxwell,     
-                                                            <cite title="Source Title">goodreads.com</cite>
-                                                        </footer>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-            
-            
-                                    <!-- Bootstrap controls [dots]-->
-                                    <a class="carousel-control-prev width-auto" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                        <i class="fa fa-angle-left text-dark text-lg"></i>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="carousel-control-next width-auto" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                        <i class="fa fa-angle-right text-dark text-lg"></i>
-                                        <span class="sr-only">Next</span>
-                                    </a>
+             <!-- qoute -->
+             <div class="container reveal" >
+                <h2 class="text-center" style="color: #6c757d; opacity: 50%;">A bit of <b style="opacity: 100%; color: #000000;">Motivation</b>, won't hurt...</h2>
+                <hr class="divider secondary my-4"/>
+                <blockquote class="quote-box" style="margin:auto">
+                  <p class="quotation-mark">
+                    “
+                  </p>
+                  <p class="quote-text" id="quote">
+                    <b>Fail</b> early, <b>Fail</b> often, <b>Fail</b> forward
+                 </p>
+                  <hr>
+                  <div class="blog-post-actions " >
+                    <p class="blog-post-bottom pull-left author" >
+                        John C. Maxwell
+                    </p>
+                    <p class="blog-post-bottom pull-right">
+                      <span class="badge quote-badge">1</span>  ❤
+                    </p>
+                  </div>
+                </blockquote>
+            </div>
+
+
+        </section>
+
+        
+        <section class="page-section" id="background">
+           
+            <h2 class="text-center">Background</h2>
+
+             <!-- A group switch | also a heading in order to switch -->
+             <div class="container" style="justify-content: center; display: flex;" >
+                <div class=" btn-group"  role="grid" aria-label="Type of background - Education or work Experience">
+                    <button type="button" data-section="section1"  class="btn btn-outline-primary"> <h3 class="text-center">Education</h3></button>
+                    <button type="button" data-section="section2"  class="btn btn-outline-primary"> <h3 class="text-center">Work Experience</h3> </button>
+                </div>
+             </div>
+            <hr class="divider primary my-4" /></hr>
+
+         
+
+             <!-- EDUCATION -->
+            <div class="content-section" id="section1">
+                <h2 class="text-center" > Educational Background </h2>
+
+                <div class="timeline"> 
+
+                    <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1 reveal">
+                        <div class="timeline__event__icon ">
+                        <i class="lni-cake"></i>
+                        </div>
+    
+                        <div class="timeline__event__date">
+                        <p>2018 to 2023</p>
+                        </div>
+    
+                        <div class="timeline__event__content ">
+                        <div class="timeline__event__title">
+                            Bachelor's Degree
+                            <h6 style="padding: 2px;">University of Manitoba</h6>
+                        </div>
+    
+                            <div class="timeline__event__description ">
+                            
+                                <div class="container">
+                                    <p class="collapse" id = "collapseExample6" aria-expanded="false">
+                                        I'm a Computer Science-Honors graduate from the University of Manitoba<img src="https://www.countryflags.io/ca/flat/32.png"><br>Areas of Specializations include:
+                                        <br>
+                                        - Software Engineering
+                                        <br>
+                                        - Human-Computer Interaction (Front-end development)
+                                        <br>
+                                        - Artificial Intelligence
+                                        <br>
+                                        - Databases
+                                        <br>
+                                    </p>
+                                    <a id="show_more" role="button" class="collapsed" data-toggle="collapse" href="#collapseExample6" aria-expanded="false" aria-controls="collapseExample"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                
+                    <!-- UGHS -->
+                    <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2 reveal">
+                        <div class="timeline__event__icon ">
+                        <i class="lni-cake"></i>
+                        </div>
+    
+                        <div class="timeline__event__date">
+                        <p>2013 - 2017</p>
+                        </div>
+    
+                        <div class="timeline__event__content ">
+                        <div class="timeline__event__title">
+                            High School
+                            <h6 style="padding: 2px;">Uasin Gishu High School</h6>
+                        </div>
+    
+                            <div class="timeline__event__description ">
+                            
+                                <div class="container">
+                                    <p class="collapse" id = "collapseExample7" aria-expanded="false">
+                                        Attended High School in Eldoret, Kenya <img src="https://www.countryflags.io/ke/flat/32.png"><br> Obtained the High School diploma, known as Kenya Certificate of Secondary Education 
+                                    </p>
+                                    <a id="show_more" role="button" class="collapsed" data-toggle="collapse" href="#collapseExample7" aria-expanded="false" aria-controls="collapseExample"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                   
                 </div>
-            </aside>
+            </div>
 
+
+            <!-- WORK EXPERIENCE -->
+            <div class="content-section" style="display: none;" id="section2">
+            <h2 class="text-center">Work Experience </h2>
+            
+            
+            <div class="timeline"> 
+            
+                <!-- Junior Epi -->
+                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1 reveal">
+                    <div class="timeline__event__icon ">
+                    <i class="lni-cake"></i>
+                    </div>
+
+                    <div class="timeline__event__date">
+                    <p>Oct, 2021<br>to<br> Present</p>
+                    </div>
+
+                    <div class="timeline__event__content ">
+                    <div class="timeline__event__title">
+                        Junior Data Analyst
+                        <h6 style="padding: 2px;">Government of Manitoba</h6>
+                    </div>
+
+                        <div class="timeline__event__description ">
+                        
+                            <div class="container">
+                                <p class="collapse" id = "collapseExample5" aria-expanded="false">
+                                    My duties include:
+                                    <br>
+                                    • Develop web applications using R and R Shiny, HTML/CSS, and JavaScript for interactive data analysis and visualization, following Agile principles.
+                                    <br>
+                                    • Generate epidemiological outbreak reports using R Markdown and SAS to inform public health decision-making, including documentation of the process and results.
+                                    <br>
+                                    • Implement, maintain, and optimize computer programs written in R and SAS for efficient data processing and analysis.
+                                    <br>
+                                    • Design and implement data mining algorithms and machine learning models using provincial health data, to identify trends and patterns, better prediction, and get more valuable insight from the data, etc. 
+                                    <br>
+                                    • Produce data visualization, including graphs, charts, and maps, using R and Python to effectively communicate complex data.
+                                    <br>
+                                    • Automate daily epidemiological outbreak reports using R and PowerShell script for streamlined report generation and distribution.
+                                    <br>
+                                    • Generate statistical output and provide interpretation to support data driven decision-making.
+                                </p>
+                                <a id="show_more" role="button" class="collapsed" data-toggle="collapse" href="#collapseExample5" aria-expanded="false" aria-controls="collapseExample"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Surveillance Clerk -->
+                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2 reveal">
+                    <div class="timeline__event__icon ">
+                    <i class="lni-cake"></i>
+                    </div>
+
+                    <div class="timeline__event__date">
+                    <p>May, 2021<br>to<br> Nov, 2021</p>
+                    </div>
+
+                    <div class="timeline__event__content ">
+                    <div class="timeline__event__title">
+                        Surveillance Clerk
+                        <h6 style="padding: 2px;">Government of Manitoba</h6>
+                    </div>
+
+                        <div class="timeline__event__description ">
+                        
+                            <div class="container">
+                                <p class="collapse" id = "collapseExample4" aria-expanded="false">
+                                Some of my duties included: 
+                                <br>
+                                - Providing complex clerical services to support front-line Public Health service delivery across the province.
+                                <br>
+                                - Within a team and a time-sensitive environment, completing tasks such as :
+                                <br>
+                                    • Entering medical data relating to diseases reportable under the Public Health Act
+                                <br>
+                                    • Filing data in both electronic and paper filing systems
+                                <br>
+                                    • Ensuring accuracy and completeness of personal health information recorded
+                                <br>
+                                    • Communicating with Public Health practitioners throughout the province
+                                <br>
+                                    • Continually learning and adapting to new data entry systems and processes.
+                                <br>
+
+                                </p>
+                                <a id="show_more" role="button" class="collapsed" data-toggle="collapse" href="#collapseExample4" aria-expanded="false" aria-controls="collapseExample"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Curb 2 Curb -->
+                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1 reveal">
+                    <div class="timeline__event__icon ">
+                    <i class="lni-cake"></i>
+                    </div>
+
+                    <div class="timeline__event__date">
+                    <p>Dec, 2019<br>to<br> Sep, 2021</p>
+                    </div>
+
+                    <div class="timeline__event__content ">
+                    <div class="timeline__event__title">
+                        Gateman/Door Security
+                        <h6 style="padding: 2px;">Curb 2 Curb Maintenance</h6>
+                    </div>
+
+                        <div class="timeline__event__description ">
+                        
+                            <div class="container">
+                                <p class="collapse" id = "collapseExample3" aria-expanded="false">
+                                Some of my duties included: 
+                                <br>
+                                • Welcoming guests upon entry to the building assisted with check-in and check-out.
+                                <br>
+                                • Answering phones, booking reservations, responding to emails and electronic reservations.
+                                <br>
+                                • Quickly and effectively solving customer challenges and constantly finding new ways to
+                                  exceed customer expectations.
+                                <br>
+                                • Effectively communicating with customers to announce guests or deliveries etc.
+                                <br>
+                                • Monitoring 20 security screens and supervising the lobby.
+                                <br>
+
+                                </p>
+                                <a id="show_more" role="button" class="collapsed" data-toggle="collapse" href="#collapseExample3" aria-expanded="false" aria-controls="collapseExample"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Bath and body works -->
+                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type2 reveal">
+                    <div class="timeline__event__icon ">
+                    <i class="lni-cake"></i>
+                    </div>
+
+                    <div class="timeline__event__date">
+                    <p>Jul, 2020<br>to<br> May, 2021</p>
+                    </div>
+
+                    <div class="timeline__event__content ">
+                    <div class="timeline__event__title">
+                        Replenishment Associate
+                        <h6 style="padding: 2px;">Bath & Body Works</h6>
+                    </div>
+
+                        <div class="timeline__event__description ">
+                        
+                            <div class="container">
+                                <p class="collapse" id = "collapseExample1" aria-expanded="false">
+                                Some of my duties included: 
+                                <br>
+                                • Take inventory or examine merchandise to identify items to be reordered or replenished.
+                                <br>
+                                • Stock shelves, racks, cases, bins, and tables with new or transferred merchandise.
+                                <br>
+                                • Receive, open, unpack and issue sales floor merchandise.
+                                <br>
+                                • Clean display cases, shelves, and aisles.
+                                <br>
+                                • Design and set up advertising signs and displays of merchandise on shelves, counters, or tables to attract customers and promote sales.
+                                <br>
+
+                                </p>
+                                <a id="show_more" role="button" class="collapsed" data-toggle="collapse" href="#collapseExample1" aria-expanded="false" aria-controls="collapseExample"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Walmart -->
+
+                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1 reveal">
+                    <div class="timeline__event__icon ">
+                    <i class="lni-cake"></i>
+                    </div>
+
+                    <div class="timeline__event__date">
+                    <p>Jun, 2018<br>to<br> Dec, 2019</p>
+                    </div>
+
+                    <div class="timeline__event__content ">
+                    <div class="timeline__event__title">
+                        Cashier
+                        <h6 style="padding: 2px;">Walmart, Canada</h6>
+                    </div>
+
+                        <div class="timeline__event__description ">
+                        
+                            <div class="container">
+                                <p class="collapse" id = "collapseExample" aria-expanded="false">
+                                Some of my duties included: 
+                                <br>
+                                    • Processing applications for Walmart's MasterCard program to promote regualr customers</li>
+                                    <br>
+                                    • Scan goods and collect payments, handling cash or credit or cheque transactions with customers</li>
+                                    <br>
+                                    • Answering calls from customers and answering all their question or providing all the relevant information they need accurately and concisely</li>
+                                    <br>
+                                    • Effectively managed the cash register, POS and balancing the register at the end of the shifts</li>
+                                    <br>
+                                    • Listening and understanding customers problem and concerns, and effectively looking for optimum solutions</li>
+
+                                </p>
+                                <a id="show_more" role="button" class="collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+
+ 
         </section>
-       
+ 
         
        <!-- Portfolio section <section id="portfolio">-->
        <section class="page-section" id="portfolio" style="padding-bottom: 20px;padding-top: 0px;">
             <div class="container">
-
+                
                 <!-- Page Heading -->
                 <h2 class="text-center">Projects</h2>
                 <hr class="divider primary my-4" />
-                <div class="container p-t-0 m-t-2 carousel-inner">  
-                    <div class="row">
+                <div class="container p-t-0 m-t-2 carousel-inner" >  
+                    <div class="row" >
                        
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="col-lg-4 col-sm-6 mb-4 reveal">
+                            <div class="card h-100">
+                                <a href="https://github.com/Viki4325/E-Book-Hub><img class="card-img-top" src="" alt=""></a>
+                                <div class="card-body">
+                                <h4 class="card-title">
+                                    <a href="https://github.com/Viki4325/E-Book-Hub">E-Book-Hub</a>
+                                </h4>
+                                <p class="card-text">For kids, youth and adults who are looking to make reading more interesting and unremarkable, 
+                                                    E-Book Hub is a web application that offers a variety of books and awesome experience to readers to read electronic books with various type of features. 
+                                                    Our web application can be used by kids, youth, adults, and senior in their preferred light mode of reading.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-sm-6 mb-4 reveal">
                             <div class="card h-100">
                                 <a href="https://github.com/Viki4325/LZW-Encoder-Decoder"><img class="card-img-top" src="assets\lzw compressor onlinepngtools.png" alt=""></a>
                                 <div class="card-body">
@@ -333,7 +613,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="col-lg-4 col-sm-6 mb-4 reveal">
                             <div class="card h-100">
                                 <a href="https://github.com/Viki4325/TDMS"><img class="card-img-top" src="assets\TDMS-onlinepngtools.png" alt=""></a>
                                 <div class="card-body">
@@ -345,7 +625,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="col-lg-4 col-sm-6 mb-4 reveal">
                             <div class="card h-100">
                                 <a href="https://github.com/Viki4325/Tic-Tac-Toe"><img class="card-img-top" src="assets\tic-tac-toe onlinepngtools.png" alt=""></a>
                                 <div class="card-body">
@@ -357,7 +637,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="col-lg-4 col-sm-6 mb-4 reveal">
                             <div class="card h-100">
                                 <a href="https://github.com/Viki4325/Connect-4"><img class="card-img-top" src="assets\output-onlinepngtools.png" alt="connect4 image"></a>
                                 <div class="card-body">
@@ -370,7 +650,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="col-lg-4 col-sm-6 mb-4 reveal">
                             <div class="card h-100">
                                 <a href="https://github.com/Viki4325/Brain-Trainer"><img class="card-img-top" src="assets\brainTrainer-onlinepngtools.png" alt=""></a>
                                 <div class="card-body">
@@ -383,38 +663,36 @@
                             </div>
                         </div>
 
-                        <!-- <div class="col-lg-4 col-sm-6 mb-4">
+                         <div class="col-lg-4 col-sm-6 mb-4 reveal">
                             <div class="card h-100">
-                                
-                                <video class="card-img-top" width="320" height="240" controls>
-                                    <source src="assets\ForTenants_Demo_WEB.mp4" type="video/mp4">
-                                    Your browser does not support the video tag.
-                                </video>
+                                <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                                 <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="https://github.com/Viki4325/ForTenantsApp">ForTenants App</a>
+                                    <a href="https://github.com/Viki4325/">Coming Soon!!</a>
                                 </h4>
-                                <p class="card-text">An android application whose users are tenants and care takers for a resedential building. Tenants can create a profile, make maintenance requests which are sent to the caretaker, receive updates from the care taker if any. This app helps immediate and effective communication between the tenants and the managment. </p>
-                                <p class="card-text">This is still a work in progress...More yet to come</p>
+                                <p class="card-text">Looking for a freelancer to work on a project you have been waiting to accomplish.</p>
+                                <p class="card-text">From website development to app development to software development. Want a hand in research??</p>
+                                 <p class="card-text">You reached out to the right place, <a href="#contact">Contact me</a> below for further discussions</p>
+
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
+                    
                     </div>
                 </div>
             </div>
 
-           
+        
             
             <div class="container">
                 <div class="row">
-                    
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4 reveal">
                         <div class="collapse" id="collapseProjects">
                             <div class="card h-100">
                                 <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                                 <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="https://github.com/Viki4325/Brain-Trainer">Coming Soon!!</a>
+                                    <a href="https://github.com/Viki4325/">Coming Soon!!</a>
                                 </h4>
                                 <p class="card-text">More Projects being worked on...Will be added to the list soon. Have an idea and need someone to work with? <a href="#contact">Contact me</a></p>
                                 </div>
@@ -422,13 +700,13 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4 reveal">
                         <div class="collapse" id="collapseProjects">
                             <div class="card h-100">
                                 <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                                 <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="https://github.com/Viki4325/Brain-Trainer">Coming Soon!!</a>
+                                    <a href="https://github.com/Viki4325/">Coming Soon!!</a>
                                 </h4>
                                 <p class="card-text">More Projects being worked on...Will be added to the list soon. Have an idea and need someone to work with? <a href="#contact">Contact me</a></p>
                                 </div>
@@ -436,13 +714,13 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-4 col-sm-6 mb-4">
+                    <div class="col-lg-4 col-sm-6 mb-4 reveal">
                         <div class="collapse" id="collapseProjects">
                             <div class="card h-100">
                                 <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
                                 <div class="card-body">
                                 <h4 class="card-title">
-                                    <a href="https://github.com/Viki4325/Brain-Trainer">Coming Soon!!</a>
+                                    <a href="https://github.com/Viki4325/">Coming Soon!!</a>
                                 </h4>
                                 <p class="card-text">Work in progress...Will be added to the list soon.<a href="#contact">Contact Me</a></p>
                                 </div>
@@ -451,11 +729,12 @@
                     </div>
 
                 </div>
+
             </div> 
 
             <!-- The see more/see less button -->
             <div class="d-flex justify-content-center align-items-center">
-                <button id="SeeMore" class="SeeMore" type="button" data-toggle="collapse" data-target="#collapseProjects" aria-expanded="true" aria-controls="collapseProjects">See More</button>
+                <button id="SeeMore" class="SeeMore" type="button" data-toggle="collapse" data-target="#collapseProjects" aria-expanded="true" aria-controls="collapseProjects" >See More</button>
             </div>
 
         </section>
@@ -475,35 +754,43 @@
                 <div class="row">
                     <div class="column " style="align-content: center;" >
 
-                        <div class="row justify-content-md-center mt-5">
-                            <p class="text-muted mb-5 mt-5" style="text-align: center;">Want to say hello or work together on projects as a team, call me or email me!! </p>
+                        <div class="row justify-content-md-center mt-5 reveal">
+                            <p class="text-muted mb-5 mt-5 " style="text-align: center;">Want to say hello or work together on projects as a team, call me or email me!! </p>
                             <ul style="list-style-type: none;">
-                            <li>
-                                <i class="fas fa-phone fa-3x text-muted"> </i><span style="display: inline-block;vertical-align: middle;">&nbsp;&nbsp; (431) 335-9869 </span>
-                            </li>
-                            <li>
-                                 <i class="fas fa-envelope fa-3x mt-5 text-muted"> </i> <span style="display: inline-block;vertical-align: middle;"><address><a class="d-block" href="mailto:makadiaviki@gmail.com">&nbsp;&nbsp; makadiaviki@gmail.com</a></address></span>
-                            </li>
-                            <li>
-                                <i class="fas fa-map-marker-alt fa-3x mt-5 text-muted"></i><span style="display: inline-block;vertical-align: middle;">&nbsp;&nbsp; Winnipeg, Manitoba </span>
-                            </li>
+                            <div class="reveal">
+                                <li>
+                                    <i class="fas fa-phone fa-3x text-muted "> </i><span style="display: inline-block;vertical-align: middle;">&nbsp;&nbsp; (431) 335-9869 </span>
+                                </li>
+                            </div>
+                           
+                            <div class="reveal">
+                                <li>
+                                    <i class="fas fa-envelope fa-3x mt-5 text-muted "> </i> <span style="display: inline-block;vertical-align: middle;"><address><a class="d-block" href="mailto:vikimakadiaportfolio@gmail.com">&nbsp;&nbsp; vikimakadiaportfolio@gmail.com</a></address></span>
+                               </li>
+                            </div>
+                            
+                            <div class="reveal">
+                                <li>
+                                    <i class="fas fa-map-marker-alt fa-3x mt-5 text-muted "></i><span style="display: inline-block;vertical-align: middle;">&nbsp;&nbsp; Winnipeg, Manitoba </span>
+                                </li>
+                            </div>
+                            
                             </ul>
                         </div>
                         
                         <!-- Social Media icons -->
-                        <div class="row justify-content-md-center mt-5" style="margin-top: 5px;">
-                            <ul class="social-icons mt-5" >
+                        <div class="row justify-content-md-center mt-5 " style="margin-top: 5px;">
+                            <ul class="social-icons mt-5 reveal" >
                                 <li class="col-6 col-sm-2" style="margin: 5px;"> <a href="https://www.facebook.com/viki.makadia"><i id="social-fb" class="fab fa-facebook-square fa-3x "></i></a></li>
                                 <li class="col-6 col-sm-2" style="margin: 5px;"> <a href="https://www.linkedin.com/in/viki-makadia-649656171/"><i id="social-gp" class="fab fa-linkedin-in fa-3x"></i></a></li>
                                 <li class="col-6 col-sm-2" style="margin: 5px;"> <a href="https://www.instagram.com/viki_makadia/"><i id="social-em" class="fab fa-instagram fa-3x"></i></a></li>
                                 <li class="col-6 col-sm-2" style="margin: 5px;"> <a href="https://github.com/Viki4325"><i id="social-gh" class="fab fa-github fa-3x"></i></a></li>
                             </ul>
                         </div>
-
                     </div>
                     <div class="column">
                         <div class="row">
-                            <div class="col-lg-12 mr-auto text-center">
+                            <div class="col-lg-12 mr-auto text-center reveal">
                                 <div class="powr-form-builder" id="0ee22e3e_1592810775"></div>
                             </div>
                         </div>
@@ -511,13 +798,37 @@
                   </div>
 
                 <div class="powr-hit-counter" id="bcf12c6e_1592817089"></div>
-               
+                
             </div>
         </section>
+
         <!-- Footer--> 
         <footer class="bg-light py-5">
             <div class="container"><div class="small text-center text-muted">Design Inspired By Creative Bootstrap Theme ©</div></div>  
         </footer>
+
+        <script type="text/javascript">
+        window.addEventListener('scroll',reveal);
+
+        function reveal(){
+            var reveals = document.querySelectorAll('.reveal');
+
+            for(var i = 0; i < reveals.length; i++){
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
+
+                if(revealtop < windowheight - revealpoint){
+                    reveals[i].classList.add('active');
+
+                }else{
+                    reveals[i].classList.remove('active');
+                }
+            }
+        }
+
+        </script>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
@@ -526,6 +837,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <script src="js\gitfetch.js"></script>
         <!-- Slider -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -534,5 +846,9 @@
 
 
         <script src="https://www.powr.io/powr.js?platform=embed"></script>
+    
+
     </body>
 </html>
+
+
